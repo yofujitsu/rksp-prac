@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: rsocket-server
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/rsocket
+    username: user
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  rsocket:
+    server:
+      port: 8088
+
+server:
+  port: 8085
