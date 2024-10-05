@@ -1,0 +1,48 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+
+
+  instance1:
+    image: rksp_pr5:latest
+    container_name: instance1
+
+  instance2:
+    image: rksp_pr5:latest
+    container_name: instance2
+
+  instance3:
+    image: rksp_pr5:latest
+    container_name: instance3
+
+  instance4:
+    image: rksp_pr5:latest
+    container_name: instance4
+
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: user
+      POSTGRES_DB: rksp5
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+    networks:
+      - postgres
+
+volumes:
+  postgres:
+
+networks:
+  postgres:
+    driver: bridge

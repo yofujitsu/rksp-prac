@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: rksp5-service
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://host.docker.internal:5432/rksp5
+    username: user
+    password: password
+    driverClassName: org.postgresql.Driver
+
+server:
+  port: 80
