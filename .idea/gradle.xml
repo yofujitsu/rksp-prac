@@ -4,10 +4,18 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$USER_HOME$/Desktop/rksp_pr5" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/rksp7" />
         <option name="modules">
           <set>
-            <option value="$USER_HOME$/Desktop/rksp_pr5" />
+            <option value="$PROJECT_DIR$/rksp7" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/src/main/java/rksp7" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/src/main/java/rksp7" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -24,6 +32,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/src/main/java/rsocket-client" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../rksp_pr5" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../rksp_pr5" />
           </set>
         </option>
       </GradleProjectSettings>

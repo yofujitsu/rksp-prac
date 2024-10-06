@@ -6,6 +6,8 @@
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/rksp7" />
+    <file type="web" url="file://$PROJECT_DIR$/src/main/java/rksp7" />
     <file type="web" url="file://$PROJECT_DIR$/src/main/java/rsocket" />
     <file type="web" url="file://$PROJECT_DIR$/src/main/java/rsocket-client" />
   </component>

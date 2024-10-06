@@ -1,0 +1,23 @@
+services:
+  postgres:
+    container_name: postgres_rksp7
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: rksp7
+      POSTGRES_USER: rksp7
+      POSTGRES_DB: rksp7
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+    networks:
+      - postgres
+
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+  postgres:
