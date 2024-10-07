@@ -3,6 +3,7 @@ package com.yofujitsu.rksp7.entity;
 import lombok.*;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -12,6 +13,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Table("users")
 public class User {
 
     @Id

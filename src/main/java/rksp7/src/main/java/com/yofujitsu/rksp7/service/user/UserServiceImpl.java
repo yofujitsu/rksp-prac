@@ -27,6 +27,7 @@ public class UserServiceImpl implements UserService {
     public Flux<UserDto> getUsers() {
         return userRepository.findAll()
                 .map(userMapper::toUserDto)
+                .switchIfEmpty(Flux.just(new UserDto()))
                 .onErrorResume(e -> Flux.error(new EntityNotFoundException()))
                 .onBackpressureBuffer();
     }

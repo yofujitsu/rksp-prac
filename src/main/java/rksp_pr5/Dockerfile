@@ -4,8 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN chmod +x gradlew
-
 RUN gradle build -x test
 
 FROM openjdk:17-jdk-alpine
@@ -16,4 +14,4 @@ COPY --from=builder /app/build/libs/*.jar app.jar
 
 EXPOSE 80
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+CMD ["java", "-Dspring.datasource.url=jdbc:postgresql://host.docker.internal:5432/rksp5", "-Dspring.datasource.username=user", "-Dspring.datasource.password=password", "-jar", "app.jar"]
