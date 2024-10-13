@@ -4,14 +4,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/rksp7" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/rksp7" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/src/main/java/rksp7" />
         <option name="modules">
           <set>

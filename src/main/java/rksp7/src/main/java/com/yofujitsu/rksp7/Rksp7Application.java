@@ -8,8 +8,8 @@ import org.springframework.web.reactive.config.EnableWebFlux;
 @EnableWebFlux
 public class Rksp7Application {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Rksp7Application.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Rksp7Application.class, args);
+    }
 
 }
